@@ -6,3 +6,15 @@ data "terraform_remote_state" "base_infra" {
     region = "us-east-1"
     }
   }
+
+provider "aws" {
+    region = "us-east-1"
+}
+
+terraform {
+  backend "s3" {
+    bucket = "iac-aws-backend"
+    key    = "aws-backend/remote.tfstate"
+    region = "us-east-1"
+  }
+}
