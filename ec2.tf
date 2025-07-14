@@ -1,6 +1,6 @@
 resource "aws_instance" "Public_server_1" {
-  ami                         = "ami-0150ccaf51ab55a51"
-  instance_type               = "t2.micro"
+  ami                         = var.ami
+  instance_type               = var.type
   key_name                    = "test"
 
   vpc_security_group_ids      = [data.terraform_remote_state.base_infra.outputs.sg1]
