@@ -1,5 +1,5 @@
 data "terraform_remote_state" "base_infra" {
-  backend = "remote"
+  backend = "s3"
   config = {
     bucket = "iac-aws-backend"
     key    = "aws-backend/aws-tf.tfstate"
