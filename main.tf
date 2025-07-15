@@ -16,5 +16,6 @@ terraform {
     bucket = "iac-aws-backend"
     key    = "aws-backend/aws-tf.tfstate"
     region = "us-east-1"
+    use_lockfile = true
   }
 }
