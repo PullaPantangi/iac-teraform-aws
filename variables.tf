@@ -1,0 +1,11 @@
+variable vpc_cidr {}
+variable vpc_name {}
+variable pub_subnet_cidr {}
+variable pvt_subent_cidr {}
+variable igw_route {}
+variable ports_in {}
+variable ami {}
+variable instance_type {}
+variable key_name {}
+variable region {}
+variable Env {}

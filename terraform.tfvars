@@ -1,0 +1,11 @@
+vpc_cidr = "10.1.0.0/16"
+vpc_name = "Platinum-vpc" 
+pub_subnet_cidr = ["10.1.1.0/24","10.1.2.0/24","10.1.3.0/24" ]
+region = ["us-east-1a","us-east-1b","us-east-1c"]
+pvt_subent_cidr = ["10.1.4.0/24","10.1.5.0/24","10.1.6.0/24" ]
+igw_route = "0.0.0.0/0"
+ports_in = [22, 443]
+ami = "ami-0150ccaf51ab55a51"
+instance_type = "t2.micro"
+key_name = "test"
+Env = "ptpr"
