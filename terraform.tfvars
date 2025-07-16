@@ -1,0 +1,6 @@
+ami = "ami-0150ccaf51ab55a51"
+instance_type= "t2.micro"
+key_name = "test"
+igw_route = "0.0.0.0/0"
+pub_cidr = "10.1.1.0/24"
+vpc_cidr = "10.1.0.0/16"

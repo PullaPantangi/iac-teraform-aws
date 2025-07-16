@@ -7,3 +7,6 @@ output sub_id {
 output sg1 {
   value = aws_security_group.pulla-main_sg1.id
 }
+output instance_arn {
+  value = aws_instance.Pub1.arn
+}        
