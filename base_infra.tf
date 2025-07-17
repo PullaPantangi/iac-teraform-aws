@@ -172,6 +172,12 @@ resource "null_resource" "remote_usedata" {
     private_key = file(var.key_path)
   }
 }
+resource "local_file" "foo" {
+  content  = templatefile("${var.tftpl}", { 
+    pub_ip = aws_instance.Pub[*].public_ip
+  })
+  filename = var.local_file
+}
 resource "null_resource" "remote" {
   count      = length(aws_instance.Pub[*].id)
   depends_on = [aws_instance.Pub]

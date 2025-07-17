@@ -10,3 +10,5 @@ variable "key_path" {}
 variable "region" {}
 variable "Env" {}
 variable "key_name" {}
+variable "local_file" {}
+variable "tftpl" {}

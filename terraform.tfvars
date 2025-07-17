@@ -8,5 +8,7 @@ ports_in        = [22, 443,80]
 ami             = "ami-0150ccaf51ab55a51"
 instance_type   = "t2.micro"
 key_path        = "C:/Users/raoli/.ssh/id_rsa"
+local_file        = "C:/Users/raoli/inventory"
 Env             = "ptpr"
 key_name        = "test"
+tftpl         = "C:/Users/raoli/functions/inventoy.tftpl"
