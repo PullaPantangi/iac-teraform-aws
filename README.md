@@ -1,1 +1,2 @@
-# iac-teraform
+#  this repo intended for usage of terraform concepts for aws resources
+# you can checkout branches for more info 
